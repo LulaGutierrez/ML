@@ -1,0 +1,333 @@
+/* HEADER */
+header{
+    background-color: var(--colorAmarillo);   
+    width: 100%; 
+}
+
+.encabezado{
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    padding-top: 5px;
+}
+
+.barrabusqueda form{
+    background-color: #FFF;
+    border-radius: 5px;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fa-magnifying-glass{
+    border: none;
+    background-color: #FFF;
+    width: 12%;
+}
+
+.busqueda{
+    border: none;
+    width: 80%;
+}
+
+nav{
+    display: none;
+}
+
+ul{
+    display: none;
+}
+/* el nav que tiene display flex, flex wrap wrap y jusitfy content space bitwin estan en tablet
+ul site y user tambien*/
+
+.compra{
+    text-align: center;
+    margin: 0;
+}
+
+
+.burger-menu {
+    text-align: center;
+    background-color: var(--colorCeleste);
+    margin-left: 45%;
+    display: inline-block;
+    padding: 5px 8px;
+    color: var(--colorGrisClaro);
+    border-radius: 10%;
+    margin-bottom: 5px;
+    margin-top: 10px;
+} 
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+}
+
+/* MAIN */
+
+main{
+    background-color: var(--colorGrisClaro);
+    
+}
+
+.caja {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    align-items:center;
+    justify-content: center;
+    padding: 5%; 
+    gap: 30px 5px; 
+}
+
+.articuloshome{
+    padding: 5px 0; 
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    margin: 10px;
+    /*box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);*/
+    width: 100%;   
+}
+
+.descripcionTotalArticulo{
+    text-align: left;
+    border-top: 1px solid var(--colorGrisClaro);
+    padding: 8px;
+    background-color: white;
+    position: relative;
+    
+}
+
+
+.fa-truck:before {
+    position: absolute;
+    top: 29%;
+    left: 28%;
+}
+
+
+.articuloshome img{
+    width: 100%;
+}
+
+.precio{
+    font-size: var(--precios);
+    display: inline;
+    width: 30%;
+}
+
+.descuento{ 
+    font-size: var(--descripcionesYdescuentos);
+    color: var(--colorVerde);
+    display: inline;
+    width: 70%;
+}
+
+.descripcion{
+    font-size: var(--descripcionesYdescuentos);
+    color: var(--colorGrisOscuro);
+    display: none;
+   
+}
+
+.cuerpo{
+   font-size: var(--cuerpoDeTexto);
+   margin-top: 0px;
+}
+
+section i {
+    color: var(--colorCeleste);
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+.fa-truck {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--colorVerde);
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: -40px;
+    color: var(--colorVerde);
+    
+}
+ /* FOOTER */
+footer {
+    text-align: center;
+    background-color: #FFF;
+}
+
+.titulofooter {
+   font-weight: 500;
+   margin-bottom: 0px;
+   margin-top: 0px;
+}
+
+#copyright{
+    text-align: left;
+    font-size: 10px;
+    padding-top: 20px;
+    padding-left: 5px;
+}
+
+/* TABLET */
+@media (min-width: 768px){
+    /* HEADER */
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    ul{
+        list-style: none;
+        padding: 5px;
+        display: flex;
+        gap: 20px
+    }
+    
+    .site{
+        justify-content: flex-start;
+    }
+    
+    .user{
+        justify-content: flex-end;
+    }
+
+   .burger-menu {
+        display: none;
+    }
+    
+
+    /* MAIN */
+    .titular{
+        margin: 0%;
+        padding: 0%;
+    }
+    main section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding: 6%;
+        gap: 15px 0px;
+        /* display: flex;
+        flex-wrap: wrap;  
+       text-align: justify; 
+        gap: 20px 3px;
+        align-items: center;*/
+    }
+    
+   .articuloshome{
+    /*box-shadow: 0px 0px 10px rgb(100, 100, 100);*/
+    width: 35%;
+    justify-content: space-between;
+    }
+    
+    .descripcion{
+       display: block;
+       font-size: var(--descripcionesYdescuentos);
+       color: var(--colorGrisOscuro);
+    }
+    
+    /* FOOTER*/
+    footer {
+        text-align: center;
+        background-color: #FFF;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .seccion1{
+        width: 32%;
+    }
+
+    .seccion2{
+        width: 90%;
+        text-align: center;
+    }
+}
+
+/*  DESKTOP */
+@media (min-width: 1024px ){ 
+    /* HEADER */
+    
+    .burger-menu{
+    display: none;
+    }
+    
+    /* MAIN */
+    main section{
+        padding-top: 0;
+    }
+
+    .caja{
+        padding-top: 0;
+        height: 350px;
+    } 
+    
+    article:hover .descripcion{
+        height: 30px;
+    }
+
+
+    article{
+        width: 20%;
+        margin: 10px 2%;
+        height: 220px;
+        transition: all .2s ease;
+        -webkit-transition: all .2s ease;
+        -moz-transition: all .2s ease;
+        -ms-transition: all .2s ease;
+        -o-transition: all .2s ease;
+    }
+
+    .articuloshome:hover { 
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .articuloshome{ /* es donde está el todo el producto*/
+        width: 22%;
+    }
+    
+    .articuloshome:hover .descripcion{
+        display:block;
+    }
+
+    .descripcion{
+        display: none;
+        width: 100%;
+        margin: 3px;
+    }
+
+    .articuloshome:hover .camioncito i{
+        transform: rotate(-360deg);
+    }
+
+    .fa-truck{
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    }
+
+    /* FOOTER */
+    .foot:hover i{
+        color: #0022AA;
+    }
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/cbbf860933.js" crossorigin="anonymous"></script>
+    <title>Register</title>
+</head>
+
+<body>
+    <header>
+        <div class="encabezado">
+            <div class="logo"><a href="/"><img src="/img/logo-mercado-liebre.svg" alt="logo" height="40"></a></div>
+            <div class="barrabusqueda">
+                <form action="">
+                    <input type="text" placeholder="Buscar productos, marcas, etc" />
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <p class="compra"><i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de
+                crédito</p>
+        </div>
+
+        <nav>
+            <ul class="site">
+                <li>Ofertas</li>
+                <li>Tiendas oficiales</li>
+                <li>Vender</li>
+                <li>Ayuda</li>
+
+            </ul>
+            <ul class="user">
+                <li><a href="/register">Creá tu cuenta <i class="fa-solid fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresá<i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+                <li>Mis compras<i class="fa-solid fa-basket-shopping"></i></li>
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="banner"><img src="/img/img-home-banner.jpg" alt="banner"></div>
+    </header>
+    <main class="reg-main">
+        <h3 class="reg-h3">REGISTRATE</h3>
+        <form action="" class="reg-form">
+            <div class="reg-formBox">
+                <label class="reg-formLabel" for="nombre">Nombre</label>
+                <input class="reg-formInput" type="text" id="nombre" autocomplete="off" name="firstName" min="0"
+                    max="32" required>
+                <small class="reg-formText">*Obligatorio</small>
+            </div>
+            <div class="reg-formBox">
+                <label class="reg-formLabel" for="apellido">Apellido</label>
+                <input class="reg-formInput" type="text" id="nombre" autocomplete="off" name="firstName">
+                <small class="reg-formText">*Obligatorio</small>
+            </div>
+            <div class="reg-formBox">
+                <label class="reg-formLabel" for="usuario">Nombre de usuario</label>
+                <input class="reg-formInput" type="text" id="user" autocomplete="off" name="user" min="0" max="32">
+            </div>
+            <div class="reg-formBox">
+                <label class="reg-formLabel" for="password">Contraseña:</label>
+                <input class="reg-formInput" type="password" id="password" name="password">
+                <br>
+                <small class="reg-formText1">*El password debe contener entre 6 y 12 caracteres</small>
+            </div>
+            <div class="reg-formBox">
+                <label class="reg-formLabel" for="password">Confirmar contraseña:</label>
+                <input class="reg-formInput" type="password" id="password" name="password">
+            </div>
+            <div class="reg-formBox">
+                <label for="reg-formLabel" id="dom" for="adress">Domicilio</label>
+                <input class="reg-formInput" type="text" name="address">
+            </div>
+            <div class="reg-formBox">
+                <label class="reg-formLabelBirth" for="date">Fecha de nacimiento:</label>
+                <input class="reg-formInputBirth" type="date" id="date" name="birthday">
+                <small class="reg-formText">*Para vender tenes que ser mayor de edad</small>
+            </div>
+            <div class="reg-formBox1">
+                <label class="reg-formLabel" for="">Elegí una opción</label>
+                <div class="reg-radio">
+                    <input type="radio" name="perfilUsuario" value="Vender">
+                    <label for="perfilUsuario">Quiero vender</label>
+                </div>
+                <div class="reg-radio">
+                    <input type="radio" name="perfilUsuario" value="Comprar">
+                    <label for="perfilUsuario">Quiero comprar</label>
+                </div>
+            </div>
+            <div class="reg-formBox1">
+                <label class="reg-formLabel" type="checkbox" id="interes" name="interes">Seleccioná las opciones que más
+                    te interesen</label>
+                <input type="checkbox" name="interes" value="Electro"><label class="reg-inputCheck">Electro</label>
+                <input type="checkbox" name="interes" value="Moda"><label class="reg-inputCheck">Moda</label>
+                <input type="checkbox" name="interes" value="Hogar"><label class="reg-inputCheck">Hogar</label>
+                <input type="checkbox" name="interes"
+                        value="Juguetería"><label
+                        class="reg-inputCheck">Juguetería</label>
+                <input type="checkbox" name="interes" value="Vida sana"><label class="reg-inputCheck">Vida sana</label>
+            </div>
+            <div class="reg-formBox1">
+                <label for="avatar" class="reg-img" >Seleccioná tu foto de perfil</label>
+                <input class="reg-inputFile" type="file" name="avatar" id="avatar" accept=".jpg">
+            </div>
+
+            <button class="reg-boton"><a href="/"><input type="submit" value="Enviar"></a></button>
+            <button class="reg-boton"><a href="/"><input type="reset" value="Borrar todo"></a></button>
+        </form>
+    </main>
+    <footer class="foot">
+        <section class="seccion1">
+            <i class="fa-solid fa-credit-card"></i>
+            <p class="titulofooter">Pagá con tarjeta o en efectivo</p>
+            <p class="cuerpo">Con Mercado Liebre Cash, tenés cuotas sin<br> interés con tarjeta o efectivo en
+                puntos de <br> pago. ¡Y siempre es seguro!</p>
+        </section>
+        <section class="seccion1">
+            <i class="fa-solid fa-gift"></i>
+            <p class="titulofooter">Envío gratis desde $ 2.500</p>
+            <p class="cuerpo">Solo por estar registrad@ en Mercado Liebre <br> tenés envíos gratis en miles de
+                productos. Es <br> un beneficio de Mercado Puntos.</p>
+        </section>
+        <section class="seccion1">
+            <i class="fa-solid fa-user-shield"></i>
+            <p class="titulofooter">Seguridad, de principio a fin</p>
+            <p class="cuerpo">¿No te gusta? ¡Devolvelo! En Mercado Liebre, <br> no hay nada que no puedas hacer,
+                porque <br> estás siempre protegid@.</p>
+        </section>
+        <section class="seccion2">
+            <p id="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        </section>
+    </footer>
+</body>
+
+</html>
